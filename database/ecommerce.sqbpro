@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="ecommerce.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="676"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title=".Browsables" custom_title="0" dock_id="1" table="0,10:Browsables"/><dock_state state="000000ff00000000fd00000001000000020000043c000002b6fc0100000001fb000000160064006f0063006b00420072006f007700730065003101000000000000043c0000011800ffffff000002580000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">--customer table
+CREATE TABLE customers(
+    customer_id INTEGER PRIMARY KEY,
+    name text NOT NULL,
+    age INTEGER,
+    gender text,
+    city text,
+    state text,
+    signup_date DATE
+);
+-- Products Table
+CREATE TABLE Products (
+    product_id INTEGER PRIMARY KEY,
+    product_name TEXT NOT NULL,
+    category TEXT NOT NULL,
+    price REAL NOT NULL,
+    stock_quantity INTEGER
+);
+
+-- Orders Table
+CREATE TABLE Orders (
+    order_id INTEGER PRIMARY KEY,
+    customer_id INTEGER,
+    product_id INTEGER,
+    quantity INTEGER NOT NULL,
+    order_date DATE,
+
+    FOREIGN KEY (customer_id)
+        REFERENCES Customers(customer_id),
+
+    FOREIGN KEY (product_id)
+        REFERENCES Products(product_id)
+);
+
+-- Payments Table
+CREATE TABLE Payments (
+    payment_id INTEGER PRIMARY KEY,
+    order_id INTEGER,
+    payment_method TEXT,
+    amount REAL,
+    payment_date DATE,
+
+    FOREIGN KEY (order_id)
+        REFERENCES Orders(order_id)
+);</sql><current_tab id="0"/></tab_sql></sqlb_project>
