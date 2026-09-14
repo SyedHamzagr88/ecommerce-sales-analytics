@@ -1,0 +1,40 @@
+INSERT INTO Customers
+(customer_id,name,age,gender,city,state,signup_date) VALUES
+(1,'Aarav Sharma',24,'Male','Delhi','Delhi','2025-01-10'),
+(2,'Priya Verma',22,'Female','Mumbai','Maharashtra','2025-02-15'),
+(3,'Rahul Singh',27,'Male','Bangalore','Karnataka','2025-03-01'),
+(4,'Ananya Gupta',23,'Female','Hyderabad','Telangana','2025-01-25'),
+(5,'Vikram Patel',29,'Male','Ahmedabad','Gujarat','2025-02-12'),
+(6,'Sneha Kapoor',21,'Female','Delhi','Delhi','2025-03-08'),
+(7,'Rohan Mehta',26,'Male','Pune','Maharashtra','2025-02-20'),
+(8,'Isha Jain',24,'Female','Jaipur','Rajasthan','2025-01-18'),
+(9,'Karan Malhotra',28,'Male','Chennai','Tamil Nadu','2025-02-02'),
+(10,'Neha Sharma',22,'Female','Lucknow','Uttar Pradesh','2025-03-05'),
+(11,'Aditya Rao',25,'Male','Bangalore','Karnataka','2025-01-14'),
+(12,'Pooja Nair',23,'Female','Kochi','Kerala','2025-02-27'),
+(13,'Arjun Das',27,'Male','Kolkata','West Bengal','2025-01-30'),
+(14,'Meera Joshi',24,'Female','Indore','Madhya Pradesh','2025-03-11'),
+(15,'Siddharth Roy',26,'Male','Patna','Bihar','2025-02-05'),
+(16,'Riya Khanna',22,'Female','Delhi','Delhi','2025-03-15'),
+(17,'Manav Bansal',28,'Male','Chandigarh','Punjab','2025-01-21'),
+(18,'Tanvi Shah',23,'Female','Surat','Gujarat','2025-02-09'),
+(19,'Harsh Vardhan',25,'Male','Nagpur','Maharashtra','2025-03-03'),
+(20,'Kavya Iyer',24,'Female','Chennai','Tamil Nadu','2025-02-18');
+INSERT INTO Products
+(product_id, product_name, category, price, stock_quantity)
+VALUES
+(1,'iPhone 15','Electronics',79999,50),
+(2,'Samsung Galaxy S24','Electronics',69999,45),
+(3,'Boat Headphones','Electronics',2499,120),
+(4,'Nike Running Shoes','Sports',4999,80),
+(5,'Adidas T-Shirt','Fashion',1999,100),
+(6,'The Psychology of Money','Books',399,200),
+(7,'Atomic Habits','Books',499,180),
+(8,'Mixer Grinder','Home & Kitchen',3499,60),
+(9,'Air Fryer','Home & Kitchen',5999,40),
+(10,'Cricket Bat','Sports',2999,70),
+(11,'Face Wash','Beauty',299,250),
+(12,'Lipstick','Beauty',799,150),
+(13,'Remote Control Car','Toys',1499,90),
+(14,'Building Blocks Set','Toys',999,110),
+(15,'Laptop Backpack','Fashion',1299,130);
